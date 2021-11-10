@@ -16,15 +16,27 @@
 
 
 /*
- * OneM2M connection details
- */
-#define CSE_IP      "onem2m.iiit.ac.in"
+   OneM2M connection details
+*/
+#define CSE_IP      "dev-onem2m.iiit.ac.in"
 #define CSE_PORT    443
 #define HTTPS     true
 #define FINGER_PRINT  "10 3D D5 4E B1 47 DB 4B 5C B0 89 08 41 A7 A4 14 87 10 7F E8"
-#define OM2M_ORGIN    "AirPoll@20:22uHt@Sas"
+#define OM2M_ORGIN    "Tue_08_12_20:Tue_08_12_20"
 #define OM2M_MN       "/~/in-cse/in-name/"
-#define OM2M_AE       "AE-AQ"
+#define OM2M_AE       "Test-AE"
 
-#define OM2M_DATA_CONT  "AQ-KN00-00/Data"
-#define OM2M_DATA_LBL   "[\"AE-AQ\", \"AQ-KN00-00\", \"V3.0.02\", \"AQ-V3.0.02\"]"
+#define OM2M_DATA_CONT  "test_flex"
+//#define OM2M_DATA_LBL   "[\"AE-AQ\", \"AQ-KN00-00\", \"V3.0.02\", \"AQ-V3.0.02\"]"
+
+//#define CND "org.eclipse.om2m.mydef"
+//
+//#define CSE_PORT    443
+//#define HTTPS     true
+//#define FINGER_PRINT  "10 3D D5 4E B1 47 DB 4B 5C B0 89 08 41 A7 A4 14 87 10 7F E8"
+//#define OM2M_ORGIN    "AirPoll@20:22uHt@Sas"
+//#define OM2M_MN       "/~/in-cse/in-name/"
+//#define OM2M_AE       "AE-AQ"
+//
+//#define OM2M_DATA_CONT  "AQ-KN00-00/Data"
+//#define OM2M_DATA_LBL   "[\"AE-AQ\", \"AQ-KN00-00\", \"V3.0.02\", \"AQ-V3.0.02\"]"

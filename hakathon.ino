@@ -1,5 +1,7 @@
-#define VERSION "V1.00.02"
+#define VERSION "V1.00.03"
 
+int PM25, PM10;
+int CO2;
 void setup() {
   Serial.begin(9600);
   Serial.print("Version: ");
@@ -9,13 +11,15 @@ void setup() {
   sds_setup();
 
 }
-int PM25, PM10;
+
 void loop() {
   /* Reading all the sensor values */
-  co2_loop();
+  co2_loop(&CO2);
   sds_loop(&PM25, &PM10);
-  /* End Sensor Reding*/
+  /* End Sensor Reading*/
 
+  //Encryption
+  encry_loop(&CO2, &PM25, &PM10);
   /*Connecting with http and publishing to onem2m2 server*/
   connect_http();
   publish_onem2m();
